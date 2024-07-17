@@ -1,0 +1,24 @@
+/* styles.css */
+
+/*this defines a class */
+.odd,
+.third {
+    background-color: lightpink;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.third {
+    font-size: 24px;
+}
+
+/*These statements below define ids which cannot be reused.*/
+#second {
+    color: blue;
+    font-size: 36px;
+}
+
+#fourth {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}

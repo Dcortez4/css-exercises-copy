@@ -2,7 +2,7 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
-body {
+body { 
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
@@ -12,6 +12,14 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /*added Code */
+  display: flex;
+  padding: 8px;
+  /* solutino didn't have these in here? 
+  gap: 16px;
+  align-items: center;
+  but instead this */
+  justify-content: space-between;
 }
 
 .profile-image {
@@ -27,6 +35,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  /*Added Code was not necessary:
+  display: flex; */
 }
 
 button {
@@ -45,4 +55,22 @@ a {
 
 ul {
   list-style-type: none;
+  /*added Code */
+  display: flex;
+  gap: 16px;
+  /* the above was correct but below wasn't in solution: 
+  align-items:baseline;
+  margin-right: auto ;
+  instead it was this : */
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* In order to make the content stay on the sides they made a class 
+to acheive this instead of going individually to each item: */
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
